@@ -1,0 +1,230 @@
+@import "reset.scss";
+@import "mixin.scss";
+@import "responsive.scss";
+
+body {
+  .header {
+    @include size(100%, auto);
+    position: relative;
+    display: flex;
+
+    .navbar {
+      @include size(100%, 50px);
+      background-color: white;
+      box-shadow: 0px 0px 10px rgb(195, 181, 181);
+      position: fixed;
+      top: 0px;
+      z-index: 1;
+      &__logo {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        line-height: 50px;
+        margin: 0px 20px;
+        padding: 10px;
+        letter-spacing: 5px;
+
+        &:hover {
+          @include hoverNavbar(rgb(195, 181, 181));
+        }
+      }
+
+      &__navigation {
+        @include size(330px, 50px);
+        float: right;
+        margin-right: 15px;
+        li {
+          @include size(110px, 38px);
+          list-style-type: none;
+          display: inline;
+          font-size: 1em;
+          letter-spacing: 5px;
+          line-height: 38px;
+          text-align: center;
+          padding-left: 5px;
+          margin-top: 6px;
+          float: left;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+
+          &:hover {
+            @include hoverNavbar(rgb(195, 181, 181));
+          }
+        }
+      }
+    }
+
+    .bgImage {
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .websiteName {
+      @include size(100%, auto);
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 5px;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      //   background-color: red;
+
+      &__logo {
+        &__Name {
+          padding: 15px 5px 15px 20px;
+          margin-right: 10px;
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+
+  .section {
+    @include size(96%, auto);
+    margin: auto;
+    // background-color: aqua;
+
+    .projects {
+      &__title {
+        @include title();
+      }
+
+      &__containers {
+        @include size(100%, auto);
+        // background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__content {
+          @include size(24%, auto);
+          //   background-color: red;
+          margin-top: 15px;
+          position: relative;
+
+          &__title {
+            display: inline;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            border-bottom-right-radius: 15px;
+          }
+
+          &__image {
+            @include size(100%, auto);
+          }
+        }
+      }
+    }
+
+    .about {
+      &__title {
+        @include title();
+      }
+
+      &__content {
+        @include content();
+      }
+
+      &__info {
+        display: flex;
+        justify-content: space-between;
+
+        &__member {
+          @include size(24%, auto);
+          border-radius: 10px;
+          //   background-color: rebeccapurple;
+
+          &__image {
+            @include size(100%, auto);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+          }
+
+          &__name {
+            font-size: 1.4em;
+            margin: 10px 0px;
+          }
+
+          &__position {
+            color: rgb(157, 154, 154);
+          }
+
+          &__description {
+            margin: 10px 0px;
+            // text-align: justify;
+            line-height: 1.2;
+          }
+
+          &__contactButton {
+            @include size(100%, 40px);
+            border: none;
+            background-color: rgb(214, 214, 214);
+            font-size: 1em;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            &:hover {
+              background-color: rgb(154, 145, 145);
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      &__title {
+        @include title();
+      }
+
+      &__content {
+        @include content();
+      }
+
+      &__container {
+        line-height: 3.5;
+
+        &__input {
+          @include size(100%, auto);
+          border: 1px solid rgb(188, 182, 182);
+          padding: 10px;
+          border-radius: 5px;
+          outline: none;
+          font-size: 1em;
+        }
+
+        &__button {
+          @include size(150px, 40px);
+          border: none;
+          background-color: black;
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .map {
+      margin-top: 40px;
+      &__image {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    @include size(100%, 85px);
+    background-color: black;
+    color: white;
+    line-height: 85px;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+}

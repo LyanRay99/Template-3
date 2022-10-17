@@ -1,0 +1,23 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin hoverNavbar($bgc) {
+  background-color: $bgc;
+  border-radius: 5px;
+}
+
+@mixin title {
+  color: rgb(101, 28, 21);
+  padding: 30px 0px 15px 0px;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+@mixin content {
+  text-align: justify;
+  margin: 20px auto;
+  line-height: 1.5;
+  color: rgb(101, 28, 21);
+}

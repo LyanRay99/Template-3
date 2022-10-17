@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+@media all and (max-width: 600px) {
+  .header .navbar__navigation {
+    display: none;
+  }
+  .header .websiteName__logo__Name2 {
+    display: none;
+  }
+  #section {
+    width: 85%;
+    height: auto;
+  }
+  #section .projects__containers {
+    display: block;
+  }
+  #section .projects__containers .projects__containers__content {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  #section .about__info {
+    display: block;
+  }
+  #section .about__info__member {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+}
+@media all and (max-width: 900px) and (min-width: 601px) {
+  .section .projects__containers {
+    display: inline-flex;
+  }
+  .section .projects__containers .projects__containers__content {
+    width: 49%;
+    height: auto;
+    margin-top: 2%;
+  }
+  .section .about .about__info {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .section .about .about__info .about__info__member {
+    width: 49%;
+    height: auto;
+    margin-top: 2%;
+  }
+}
+body .header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+}
+body .header .navbar {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgb(195, 181, 181);
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+body .header .navbar__logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  line-height: 50px;
+  margin: 0px 20px;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+body .header .navbar__logo:hover {
+  background-color: rgb(195, 181, 181);
+  border-radius: 5px;
+}
+body .header .navbar__navigation {
+  width: 330px;
+  height: 50px;
+  float: right;
+  margin-right: 15px;
+}
+body .header .navbar__navigation li {
+  width: 110px;
+  height: 38px;
+  list-style-type: none;
+  display: inline;
+  font-size: 1em;
+  letter-spacing: 5px;
+  line-height: 38px;
+  text-align: center;
+  padding-left: 5px;
+  margin-top: 6px;
+  float: left;
+}
+body .header .navbar__navigation li a {
+  text-decoration: none;
+  color: black;
+}
+body .header .navbar__navigation li:hover {
+  background-color: rgb(195, 181, 181);
+  border-radius: 5px;
+}
+body .header .bgImage {
+  max-width: 100%;
+  margin: auto;
+}
+body .header .websiteName {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+body .header .websiteName__logo__Name {
+  padding: 15px 5px 15px 20px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+body .section {
+  width: 96%;
+  height: auto;
+  margin: auto;
+}
+body .section .projects__title {
+  color: rgb(101, 28, 21);
+  padding: 30px 0px 15px 0px;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+body .section .projects__containers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .section .projects__containers__content {
+  width: 24%;
+  height: auto;
+  margin-top: 15px;
+  position: relative;
+}
+body .section .projects__containers__content__title {
+  display: inline;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  border-bottom-right-radius: 15px;
+}
+body .section .projects__containers__content__image {
+  width: 100%;
+  height: auto;
+}
+body .section .about__title {
+  color: rgb(101, 28, 21);
+  padding: 30px 0px 15px 0px;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+body .section .about__content {
+  text-align: justify;
+  margin: 20px auto;
+  line-height: 1.5;
+  color: rgb(101, 28, 21);
+}
+body .section .about__info {
+  display: flex;
+  justify-content: space-between;
+}
+body .section .about__info__member {
+  width: 24%;
+  height: auto;
+  border-radius: 10px;
+}
+body .section .about__info__member__image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .section .about__info__member__name {
+  font-size: 1.4em;
+  margin: 10px 0px;
+}
+body .section .about__info__member__position {
+  color: rgb(157, 154, 154);
+}
+body .section .about__info__member__description {
+  margin: 10px 0px;
+  line-height: 1.2;
+}
+body .section .about__info__member__contactButton {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: rgb(214, 214, 214);
+  font-size: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body .section .about__info__member__contactButton:hover {
+  background-color: rgb(154, 145, 145);
+}
+body .section .contact__title {
+  color: rgb(101, 28, 21);
+  padding: 30px 0px 15px 0px;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+body .section .contact__content {
+  text-align: justify;
+  margin: 20px auto;
+  line-height: 1.5;
+  color: rgb(101, 28, 21);
+}
+body .section .contact__container {
+  line-height: 3.5;
+}
+body .section .contact__container__input {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(188, 182, 182);
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1em;
+}
+body .section .contact__container__button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+body .section .map {
+  margin-top: 40px;
+}
+body .section .map__image {
+  max-width: 100%;
+}
+body .footer {
+  width: 100%;
+  height: 85px;
+  background-color: black;
+  color: white;
+  line-height: 85px;
+  text-align: center;
+}
+body .footer a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

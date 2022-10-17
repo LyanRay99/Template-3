@@ -1,0 +1,113 @@
+// body {
+//   @media all and (max-width: 990px) {
+//     .section {
+//       .projects {
+//         @include size(100%, auto);
+
+//         &__containers {
+//           @include size(200px, auto);
+//           background-color: aquamarine;
+//           //   display: flex;
+//           //   flex-wrap: wrap;
+
+//           &__content {
+//             display: block;
+//             @include size(200px, auto);
+//             background-color: red;
+//             margin-top: 15px;
+//             // position: relative;
+
+//             &__title {
+//               display: inline;
+//               padding: 15px;
+//               background-color: black;
+//               color: white;
+//               background-color: rebeccapurple;
+//               //   position: absolute;
+//               border-bottom-right-radius: 15px;
+//             }
+
+//             &__image {
+//               @include size(100px, auto);
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+@media all and (max-width: 600px) {
+  .header {
+    .navbar {
+      &__navigation {
+        display: none;
+      }
+    }
+
+    .websiteName {
+      &__logo {
+        &__Name2 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #section {
+    @include size(85%, auto);
+
+    .projects {
+      &__containers {
+        display: block;
+
+        .projects__containers__content {
+          @include size(100%, auto);
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .about {
+      &__info {
+        display: block;
+
+        &__member {
+          @include size(100%, auto);
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 900px) and (min-width: 601px) {
+  .section {
+    .projects {
+      &__containers {
+        display: inline-flex;
+
+        .projects__containers__content {
+          @include size(49%, auto);
+          margin-top: 2%;
+        }
+      }
+    }
+
+    .about {
+      .about__info {
+        display: inline-flex;
+        flex-wrap: wrap;
+        // display: block;
+        .about__info__member {
+          @include size(49%, auto);
+          margin-top: 2%;
+        }
+
+        // .member {
+        //   @include size(100%, auto);
+        //   margin-top: 40px;
+        // }
+      }
+    }
+  }
+}
